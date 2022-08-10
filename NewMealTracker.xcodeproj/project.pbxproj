@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FD52BA0C28A34862002634FA /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = FD52BA0B28A34862002634FA /* Alamofire */; };
+		FD52BA0F28A348D7002634FA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD52BA0E28A348D7002634FA /* User.swift */; };
+		FD52BA1228A34A65002634FA /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD52BA1128A34A65002634FA /* UserService.swift */; };
+		FD52BA1428A35121002634FA /* APIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD52BA1328A35121002634FA /* APIHandler.swift */; };
 		FDB8816428A05F1200D2745A /* NewMealTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB8816328A05F1200D2745A /* NewMealTrackerApp.swift */; };
 		FDB8816628A05F1200D2745A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB8816528A05F1200D2745A /* ContentView.swift */; };
 		FDB8816828A05F1400D2745A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDB8816728A05F1400D2745A /* Assets.xcassets */; };
@@ -35,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FD52BA0E28A348D7002634FA /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		FD52BA1128A34A65002634FA /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		FD52BA1328A35121002634FA /* APIHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHandler.swift; sourceTree = "<group>"; };
 		FDB8816028A05F1200D2745A /* NewMealTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewMealTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDB8816328A05F1200D2745A /* NewMealTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMealTrackerApp.swift; sourceTree = "<group>"; };
 		FDB8816528A05F1200D2745A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD52BA0C28A34862002634FA /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +81,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FD52BA0D28A348BF002634FA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FD52BA0E28A348D7002634FA /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FD52BA1028A34A35002634FA /* Service Layer */ = {
+			isa = PBXGroup;
+			children = (
+				FD52BA0D28A348BF002634FA /* Model */,
+				FD52BA1128A34A65002634FA /* UserService.swift */,
+				FD52BA1328A35121002634FA /* APIHandler.swift */,
+			);
+			path = "Service Layer";
+			sourceTree = "<group>";
+		};
 		FDB8815728A05F1200D2745A = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				FDB8816328A05F1200D2745A /* NewMealTrackerApp.swift */,
+				FD52BA1028A34A35002634FA /* Service Layer */,
 				FDB8818D28A0669F00D2745A /* Views */,
 				FDB8816728A05F1400D2745A /* Assets.xcassets */,
 				FDB8816928A05F1400D2745A /* Preview Content */,
@@ -154,6 +181,9 @@
 			dependencies = (
 			);
 			name = NewMealTracker;
+			packageProductDependencies = (
+				FD52BA0B28A34862002634FA /* Alamofire */,
+			);
 			productName = NewMealTracker;
 			productReference = FDB8816028A05F1200D2745A /* NewMealTracker.app */;
 			productType = "com.apple.product-type.application";
@@ -226,6 +256,9 @@
 				Base,
 			);
 			mainGroup = FDB8815728A05F1200D2745A;
+			packageReferences = (
+				FD52BA0A28A34862002634FA /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = FDB8816128A05F1200D2745A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -268,7 +301,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD52BA0F28A348D7002634FA /* User.swift in Sources */,
+				FD52BA1228A34A65002634FA /* UserService.swift in Sources */,
 				FDB8818F28A0673100D2745A /* LoginList.swift in Sources */,
+				FD52BA1428A35121002634FA /* APIHandler.swift in Sources */,
 				FDB8816628A05F1200D2745A /* ContentView.swift in Sources */,
 				FDB8816428A05F1200D2745A /* NewMealTrackerApp.swift in Sources */,
 			);
@@ -595,6 +631,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FD52BA0A28A34862002634FA /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FD52BA0B28A34862002634FA /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FD52BA0A28A34862002634FA /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FDB8815828A05F1200D2745A /* Project object */;
 }
