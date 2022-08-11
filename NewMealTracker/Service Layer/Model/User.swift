@@ -7,11 +7,12 @@
 
 import Foundation
 
-struct User: Identifiable, Decodable {
-    var id: Int
-    var username = ""
-    var password = ""
-    var refreshToken = ""
-    var idToken = ""
-    var pointsPerWeek = 0
+struct User: Identifiable, Codable {
+    var id: Int?
+    var username: String?
+    var password: String?
+    var RefreshToken: String?
+    var IdToken: String?
+    var AccessToken: String?
+    var pointsPerWeek: Int?
 }

@@ -10,6 +10,7 @@ import SwiftUI
 struct LoginList: View {
     @State private var username: String = ""
     @State private var password: String = ""
+    @ObservedObject var userService = UserService()
     
     var body: some View {
         NavigationView {
@@ -24,10 +25,12 @@ struct LoginList: View {
             .navigationTitle("Login")
         }
     }
-}
-
-func signin() {
-    print("Pressed")
+    
+    func signin() {
+        userService.registerUser.username = username
+        userService.registerUser.password = password
+        userService.getUser()
+    }
 }
 
 struct LoginList_Previews: PreviewProvider {

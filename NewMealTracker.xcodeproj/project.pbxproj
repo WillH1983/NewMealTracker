@@ -11,6 +11,7 @@
 		FD52BA0F28A348D7002634FA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD52BA0E28A348D7002634FA /* User.swift */; };
 		FD52BA1228A34A65002634FA /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD52BA1128A34A65002634FA /* UserService.swift */; };
 		FD52BA1428A35121002634FA /* APIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD52BA1328A35121002634FA /* APIHandler.swift */; };
+		FD52BA1628A4C45A002634FA /* RegisterUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD52BA1528A4C45A002634FA /* RegisterUser.swift */; };
 		FDB8816428A05F1200D2745A /* NewMealTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB8816328A05F1200D2745A /* NewMealTrackerApp.swift */; };
 		FDB8816628A05F1200D2745A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB8816528A05F1200D2745A /* ContentView.swift */; };
 		FDB8816828A05F1400D2745A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDB8816728A05F1400D2745A /* Assets.xcassets */; };
@@ -42,6 +43,7 @@
 		FD52BA0E28A348D7002634FA /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		FD52BA1128A34A65002634FA /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		FD52BA1328A35121002634FA /* APIHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHandler.swift; sourceTree = "<group>"; };
+		FD52BA1528A4C45A002634FA /* RegisterUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUser.swift; sourceTree = "<group>"; };
 		FDB8816028A05F1200D2745A /* NewMealTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewMealTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDB8816328A05F1200D2745A /* NewMealTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMealTrackerApp.swift; sourceTree = "<group>"; };
 		FDB8816528A05F1200D2745A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				FD52BA0E28A348D7002634FA /* User.swift */,
+				FD52BA1528A4C45A002634FA /* RegisterUser.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -307,6 +310,7 @@
 				FD52BA1428A35121002634FA /* APIHandler.swift in Sources */,
 				FDB8816628A05F1200D2745A /* ContentView.swift in Sources */,
 				FDB8816428A05F1200D2745A /* NewMealTrackerApp.swift in Sources */,
+				FD52BA1628A4C45A002634FA /* RegisterUser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
